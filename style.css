@@ -237,14 +237,11 @@ header nav ul li a:hover{
     font-weight: 100;
     margin:0 auto;
     margin-top: 10px;
-    display: flex;
     letter-spacing: 2px;
-    justify-content: center;
 }
 
 .inline{
     text-align: center;
-    /* margin: 0 auto; */
     color: #fff;
     font-family: 'Catamaran' , sans-serif;
     font-size: 17px;
