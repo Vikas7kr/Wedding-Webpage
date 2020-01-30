@@ -210,7 +210,7 @@ header nav ul li a:hover{
 .main-banner{
     width: 100%;
     height: calc(100vh - 100px);
-    background-image: linear-gradient(rgba(0,0,0,0.6 ) , rgba(0,0,0,0.6)) , url('wed1.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.6 ) , rgba(0,0,0,0.6)) , url('https://images.pexels.com/photos/1444442/pexels-photo-1444442.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
     /* color: rgba(0, 0, 50, 50); */
     
     background-repeat: no-repeat;
