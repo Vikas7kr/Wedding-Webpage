@@ -1,23 +1,5 @@
-/*
-html5doctor.com Reset Stylesheet
-v1.6.1
-Last Updated: 2010-09-17
-Author: Richard Clark - http://richclarkdesign.com
-Twitter: @rich_clark
-*/
-
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
+html, body,div,iframe
+ {
     margin:0;
     padding:0;
     border:0;
@@ -25,29 +7,15 @@ time, mark, audio, video {
     font-size:100%;
     vertical-align:baseline;
     background:transparent;
+    background-color: rgba(22, 144, 224, 0.349);
+}
+
+*{
+    text-decoration: none;
 }
 
 body {
     line-height:1;
-}
-
-article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section {
-    display:block;
-}
-
-nav ul {
-    list-style:none;
-}
-
-blockquote, q {
-    quotes:none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content:'';
-    content:none;
 }
 
 a {
@@ -58,137 +26,69 @@ a {
     background:transparent;
 }
 
-/* change colours to suit your needs */
-ins {
-    background-color:#ff9;
-    color:#000;
-    text-decoration:none;
-}
-
-/* change colours to suit your needs */
-mark {
-    background-color:#ff9;
-    color:#000;
-    font-style:italic;
-    font-weight:bold;
-}
-
-del {
-    text-decoration: line-through;
-}
-
-abbr[title], dfn[title] {
-    border-bottom:1px dotted;
-    cursor:help;
-}
-
-table {
-    border-collapse:collapse;
-    border-spacing:0;
-}
-
-/* change border colour to suit your needs */
-hr {
-    display:block;
-    height:1px;
-    border:0;  
-    border-top:1px solid #cccccc;
-    margin:1em 0;
-    padding:0;
-}
-
-input, select {
-    vertical-align:middle;
-}
-
-
-
-*{
-    text-decoration: none;
-}
-
-body{
-    /* background-color: #f3f3f3; */
-}
-
 header{
-    background-color: #fff;
-    width: 100%;
+    background-color: rgb(61, 63, 66);
+    padding: 15px;
+    width: auto;
     height: 100px;
+    border: 5px double goldenrod;
 }
-
-
-
 
 header .header-brand{
-    font-family: 'Catamaran', sans-serif;
-    color: #111;
+    font-family: 'Yellowtail', cursive;
+    color: rgb(228, 106, 25);
     margin: 0 auto;
     text-align: center;
-    padding: 20px 0;
-    font-weight: 900;
+    padding: 0 0;
+    font-weight: bold;
     text-transform: uppercase;
-    font-size: 24px;
+    font-size: 50px;
     display: block;
 }
 
-
+nav ul {
+    list-style:none;
+    margin: auto;
+}
 
 header nav ul{
     display: block;
     margin: 0 auto;
     width: fit-content;
-    float: left;
+    float: center;
+    padding: 10px 10px 10px 10px;
 }
-
 
 header nav ul li{
     list-style: none;
     margin-right: 20px;
     width: 40px;
     display: inline-block;
-    padding: 0 12px;
+    padding: 0px 7px;
 }
-
-
-
 
 header nav ul li a{
-    /* text-align: center; */
-    font-family: 'Catamaran', sans-serif;
-    color: #111;
-    /* font-weight: 900; */
-    font-size: 18px;
-    /* border: 1px solid #111; */
-    border-radius: 3px;
-    padding: 5px 20px;
-    /* border: 1px solid #fff; */
-
+    font-family: 'Bungee', cursive;
+    color: rgb(221, 93, 34);
+    font-weight: bold; 
+    font-size: 13px;
+    padding:10px 10px;
 }
-/* 
-header nav ul li a:hover{
-    color: #111;
-    padding: 5px 20px;
-    border: 1px solid #111;
-    transition: 0.3s ease;
-}  */
 
+header nav ul li a:hover{
+    color: rgb(224, 238, 30);
+    padding: 2px 10px;
+    transition: 0.3s ease;
+}  
 
 .current {
-    color: #111;
-    /* background-color: lightblue; */
-    padding: 5px 20px;
-    background-color: #eee;
-    /* margin: 20px 20px; */
-    /* font-size: 150%; */
-    border: 1px solid #111;
     transition: 0.3s ease;
+    text-decoration: underline;
 }
     
 .wrapper{
     max-width: 950px;
     margin: 0 auto;
-    background-color: #eee;
     padding: 30px 30px 30px 30px;
     /* min-height: max-content; */
 }    
@@ -196,22 +96,20 @@ header nav ul li a:hover{
 h1{
     font-family: 'Catamaran', sans-serif;
     text-align: center;
-    font-size: 27px   ;
+    font-size: 25px;
     margin-bottom: 40px;
     margin-top: 10px;
+    font-weight: 900;
+    text-decoration: underline;
+    color: rgba(228, 92, 58, 0.938);
 }
 
 h2{
     font-family: 'Catamaran', sans-serif;
     font-size: 21px;
-    font-weight: 100;
+    font-weight: 600;
     margin: 10px 0;
-
 }
-
-
-
-
 
 .resizable  {
     position: relative;
@@ -219,6 +117,7 @@ h2{
     padding-top: 30px;
     height: 0;
     overflow: hidden;
+    border:5px double rgb(22, 21, 21); 
     }
     .resizable iframe {
     position: absolute;
@@ -228,24 +127,17 @@ h2{
     height: 100%;
     }
 
-
-
-
-
 @media only screen and (min-width:1000px){
-
-
-
-
 
 header .header-brand{
     margin: 30px 0;
-    font-family: 'Catamaran', sans-serif;
+    font-family: 'Yellowtail', cursive; 
     text-align: left;
-    padding: 0 20px 0 40px;
-    border-right: 3px solid #111;
+    padding: 0 30px 0 40px;
     float: left;
+    font-size: 50px;
     line-height: 40px;
+    border-right: 5px solid  rgba(207, 195, 195, 0.979);
 }
 
 header nav ul{
@@ -253,63 +145,38 @@ header nav ul{
     float: left;
     line-height: 40px;
     padding: 30px 0px 0px 10px; 
-    float: left;
 }
     
-
-
 header nav ul li{
     list-style: none;
     margin-right: 20px;
-    /* width: 40px; */
     display: inline-block;
     margin-right: 40px;
     padding: 0 12px;
 }
 
-
-
-
 header nav ul li a{
     /* text-align: center; */
-    font-family: 'Catamaran', sans-serif;
-    color: #111;
+    font-family: 'Bungee', cursive;
+    color: rgb(230, 129, 34);
     line-height: 20px;
-    /* font-weight: 900; */
+    font-weight: 900;
     font-size: 18px;
-    /* border: 1px solid #111; */
-    border-radius: 3px;
-    padding: 5px 20px;
-    border: 1px solid #fff;
-
+    padding: 15px 20px;
 }
 
 header nav ul li a:hover{
-    color: #111;
-    padding: 5px 20px;
-    border: 1px solid #111;
+    color: rgb(218, 221, 24);
+    padding: 0px 5px;
     transition: 0.3s ease;
 } 
 
-
 h2{
-    font-size: 24px;
+    font-size: 30px;
 }
 
 h1{
-    font-size: 40px;
+    font-size: 45px;
 }
-
-
-/* iframe{
-    width: 600 ;  
-    height: 450 ;
-    resize: none;
-} */
-
-
-
-
-
 
 }
